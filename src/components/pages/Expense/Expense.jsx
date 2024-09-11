@@ -1,11 +1,31 @@
-import React from "react";
-import "./UserDashboard.css";
+import React from 'react'
+import "./Expense.css"
 import UserDashboardMap from "../UserDashboardMap/UserDashboardMap";
-import { IoArrowDown } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
 import DashboardRightMap from "../DashboardRightMap/DashboardRightMap";
 
-const UserBoard = () => {
+const Expense = () => {
+
+  const buttonConfigs = [
+    // { size: 'large', label: 'Large Button 1' },
+    // { size: 'large', label: 'Large Button 2' },
+    // { size: 'small', label: 'Small Button 1' },
+    // { size: 'small', label: 'Small Button 2' },
+    { size: 'large', label: 'Utility bills' },
+    { size: 'small', label: 'Transportation' },
+    { size: 'large', label: 'Internet dats' },
+    { size: 'small', label: 'food' },
+    { size: 'large', label: 'Personal care' },
+    { size: 'small', label: 'Gift' },
+    { size: 'large', label: 'Entertainment' },
+    { size: 'small', label: 'Health' },
+    { size: 'large', label: 'Subscription' },
+    { size: 'small', label: 'Groceries' },
+    { size: 'large', label: 'Education' },
+    { size: 'small', label: 'Airtime' },
+    { size: 'large', label: 'Businesses' },
+  ];
+
   const roll = [
     {
       balanceName: "Available Balance",
@@ -45,12 +65,11 @@ const UserBoard = () => {
       background: "#E8D0FF"
     }
   ]
-
   return (
-    <div className="dashboardHolder">
-      <div className="dashboardInner">
-        <div className="dashboardLeft">
-          <div className="dashboardLeftTop">
+      <div className="expenseHolder">
+      <div className="expenseInner">
+        <div className="expenseLeft">
+          <div className="expenseLeftTop">
             {roll.map((e, id) => {
               return (
                 <UserDashboardMap
@@ -62,9 +81,9 @@ const UserBoard = () => {
               );
             })}
           </div>
-          
-          <div className="dashboardLeftMiddle">
-            <div className="dBoardLeftMiddleTop">
+
+          <div className="expenseLeftMiddle">
+            <div className="expenseLeftMiddleTop">
               <p className="moneyFlow"> Money Flow </p>
 
               <div className="incomeExpenseHolder">
@@ -89,34 +108,44 @@ const UserBoard = () => {
               </div>
             </div>
 
-            <div className="dBoardLeftBottom">
-              <div className="dBoardLeftBotInnerTop">
+            <div className="expenseLeftBottom">
+              <div className="expenseLeftBotInnerTop">
                 <hr />
                 <hr />
                 <hr />
                 <hr />
               </div>
-              <div className="dBoardLeftBotInnerBottom"></div>
+              <div className="expenseLeftBotInnerBottom"></div>
             </div>
           </div>
 
-          <div className="dashboardLeftBottom">
-            <div className="dBoardLeftBottomTop"></div>
+          <div className="expenseLeftBottom">
+            <div className="expenseLeftBottomTop"></div>
           </div>
         </div>
 
-        <div className="dashboardRight">
-            <div className="dashboardRightInner">
-              {
+        <div className="expenseRight">
+        <p>Transaction History</p>
+            <div className="expenseRightInner">
+              {/* {
                 dashRight.map((e, index) => (
                   <DashboardRightMap e={e} key={index} backgroundColor={e.background} />
                 ))
-              }
+              } */}
+              
+              {/* <div className='transactionH'>
+              <p>Transaction History</p>
+              </div> */}
+              <div className='transactionBut'>
+              <p>No Transaction Found</p>
+              </div>
+             
+            
             </div>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default UserBoard;
+export default Expense
