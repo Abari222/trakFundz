@@ -15,6 +15,9 @@ import UserBoard from "./components/pages/UserDashboard/UserDashboard";
 import Layout from "./components/layout/Layout";
 import Expense from "./components/pages/Expense/Expense";
 import BudgetPlanner from "./components/pages/BudgetPlanner/BudgetPlanner";
+import DebtManager from "./components/pages/DebtManager/DebtManager"
+import ReportInsights from "./components/pages/ReportInsights/ReportInsights"
+import Settings from "./components/pages/Settings/Settings"
 
 const router = createHashRouter([
   {
@@ -69,6 +72,18 @@ const router = createHashRouter([
       {
         path: "budgetplanner",
         element: <BudgetPlanner />
+      },
+      {
+        path: "debtmanager",
+        element: <DebtManager />
+      },
+      {
+        path: "reportinsights",
+        element: <ReportInsights />
+      },
+      {
+        path: "settings",
+        element: <Settings />
       },
     ]
   },
