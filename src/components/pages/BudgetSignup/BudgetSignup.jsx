@@ -1,11 +1,11 @@
 import React from 'react'
-import './BudgetPlanner.css';
+import './BudgetSignup.css';
 
 import UserDashboardMap from "../UserDashboardMap/UserDashboardMap";
 import { IoIosArrowDown } from "react-icons/io";
 import DashboardRightMap from "../DashboardRightMap/DashboardRightMap";
 
-const BudgetPlanner = () => {
+const BudgetSignup = () => {
 
   const roll = [
     {
@@ -47,10 +47,10 @@ const BudgetPlanner = () => {
     }
   ]
   return (
-      <div className="BudgetPlannerHolder">
-      <div className="BudgetPlannerInner">
-        <div className="BudgetPlannerLeft">
-          <div className="BudgetPlannerLeftTop">
+      <div className="BudgetSignupHolder">
+      <div className="BudgetSignupInner">
+        <div className="BudgetSignupLeft">
+          <div className="BudgetSignupLeftTop">
             {roll.map((e, id) => {
               return (
                 <UserDashboardMap
@@ -106,8 +106,8 @@ const BudgetPlanner = () => {
             </div>
           </div>
 
-          <div className="BudgetPlannerLeftMiddle">
-            <div className="BudgetPlannerLeftMiddleTop">
+          <div className="BudgetSignupLeftMiddle">
+            <div className="BudgetSignupLeftMiddleTop">
               <p className="moneyFlow"> Money Flow </p>
 
               <div className="incomeExpenseHolder">
@@ -132,26 +132,26 @@ const BudgetPlanner = () => {
               </div>
             </div>
 
-            <div className="BudgetPlannerLeftBottom">
-              <div className="BudgetPlannerLeftBotInnerTop">
+            <div className="BudgetSignupLeftBottom">
+              <div className="BudgetSignupLeftBotInnerTop">
                 <hr />
                 <hr />
                 <hr />
                 <hr />
               </div>
-              <div className="BudgetPlannerLeftBotInnerBottom"></div>
+              <div className="BudgetSignupBotInnerBottom"></div>
             </div>
           </div>
 
-          <div className="BudgetPlannerLeftBottom">
-            <div className="BudgetPlannerLeftBottomTop"></div>
+          <div className="BudgetSignupLeftBottom">
+            <div className="BudgetSignupLeftBottomTop"></div>
           </div>
         </div>
 
-        <div className="BudgetPlannerRight">
+        <div className="BudgetSignupRight">
           <div >
         <p>Transaction History</p>
-            <div className="BudgetPlannerRightInner">
+            <div className="BudgetSignupRightInner">
               <div className='transactionBut'>
               <p>No Transaction Found</p>
               </div>
@@ -160,7 +160,7 @@ const BudgetPlanner = () => {
 
             <div>
             <p>Transaction History</p>
-            <div className="BudgetPlannerRightInner">
+            <div className="BudgetSignupRightInner">
               <div className='transactionBut'>
               <p>No Transaction Found</p>
               </div>
@@ -174,4 +174,4 @@ const BudgetPlanner = () => {
   )
 }
 
-export default BudgetPlanner
+export default BudgetSignup

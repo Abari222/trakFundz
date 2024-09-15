@@ -39,12 +39,12 @@ const Expense = () => {
       trackerName: "Budget Planner",
       backgroundColor: "#FBFDC7",
     },
-    {
-      balanceName: "Total Balance",
-      amount: "0.00",
-      trackerName: "Debt Manager",
-      backgroundColor: "#E2BDFF",
-    },
+    // {
+    //   balanceName: "Total Balance",
+    //   amount: "0.00",
+    //   trackerName: "Debt Manager",
+    //   backgroundColor: "#E2BDFF",
+    // },
   ];
 
   const dashRight = [
@@ -82,6 +82,60 @@ const Expense = () => {
             })}
           </div>
 
+          <div className='expensesList-Container'>
+
+          <div className='white-Main'>
+          <p className='white'>Expense</p>
+          <p className='white'>Expense</p>
+          <p className='white'>Analysis</p>
+        </div>
+
+          <div className='expensesList'>
+            {/* frist two rows buttons */}
+            {/* <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button>
+            <button></button> */}
+
+            
+            {/* <button></button>
+            <button></button> */}
+             {/* third row buttons */}
+            {/* <button className='row3'></button>
+            <button className='row3'></button>
+            <button className='row3'></button> */}
+
+        
+        <button></button>
+        <button></button>
+        <button className='row3'></button>
+        <button></button>
+        <button></button>
+
+        
+        <button className='row3'></button>
+        <button></button>
+        <button></button>
+        <button className='row3'></button>
+        <button></button>
+
+        
+        <button ></button>
+        <button className='row3'></button>
+        <button ></button>
+        <button ></button>
+        <button className='row3'></button>
+        
+          </div>
+          </div>
+
           <div className="expenseLeftMiddle">
             <div className="expenseLeftMiddleTop">
               <p className="moneyFlow"> Money Flow </p>
@@ -115,13 +169,13 @@ const Expense = () => {
                 <hr />
                 <hr />
               </div>
-              <div className="expenseLeftBotInnerBottom"></div>
+              {/* <div className="expenseLeftBotInnerBottom"></div> */}
             </div>
           </div>
 
-          <div className="expenseLeftBottom">
+          {/* <div className="expenseLeftBottom">
             <div className="expenseLeftBottomTop"></div>
-          </div>
+          </div> */}
         </div>
 
         <div className="expenseRight">
